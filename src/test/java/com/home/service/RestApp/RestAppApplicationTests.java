@@ -1,4 +1,4 @@
-package com.naresh.service.RestApp;
+package com.home.service.RestApp;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

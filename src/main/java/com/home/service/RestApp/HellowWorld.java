@@ -1,4 +1,4 @@
-package com.naresh.service.RestApp;
+package com.home.service.RestApp;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
