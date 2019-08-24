@@ -1,12 +1,16 @@
 package com.home.service.RestApp;
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HellowWorld {
-    @RequestMapping("/")
-    public String index(){
-        return "Hello World";
+    @Value("${spring.application.name}")
+    String appName;
+
+    @GetMapping("/")
+    public String homePage(Model model) {
+        model.addAttribute("appName", appName);
+        return "home";
     }
 }
